@@ -29,9 +29,9 @@ app.get('/',function(req,res){// to read the content of the file and send it as 
             throw err;
         else
         {
-            res.json({
+            res.json([{
                 currentTime:dt
-            });
+            }]);
         }
     })
 })
